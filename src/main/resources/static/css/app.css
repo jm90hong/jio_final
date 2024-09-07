@@ -1,0 +1,197 @@
+@font-face{
+   font-family:"regular";
+   font-style:normal;
+   src:url(../font/NotoSansKR-Regular.ttf) format('truetype');
+}
+
+@font-face{
+   font-family:"black";
+   font-style:normal;
+   src:url(../font/NotoSansKR-Black.ttf) format('truetype');
+}
+
+
+:root{
+	--main-color: #559AFE;
+	
+}
+
+body{
+   margin:0;
+   padding: 0;
+   font-size:14px;
+   font-family: 'regular';
+}
+
+
+input, button, textarea {
+	font-family: 'regular';
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	background-color: #f2f2f2;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+
+header .logo{
+	height: 30%;
+	
+}
+
+header .h-btn{
+	color:#999;
+	font-size: 14px;
+	cursor:pointer;
+	font-weight: 700;
+	margin-left:22px;
+	
+	
+}
+main{
+	width: 100%;
+	height: calc(100vh - 60px);
+	position:relative;
+}
+.left-side{
+	width:200px;
+	height: 100%;
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+.right-side{
+	position: absolute;
+	height:100%;
+	width: calc(100% - 200px);
+	top: 0;
+	right: 0;
+}
+
+
+
+
+.left-side .a-btn-group{
+	padding-top: 20px;
+}
+
+
+.left-side .a-btn-group > label{
+	font-size:17px;
+	font-weight: 700;
+	color:#222;
+	margin-bottom: 10px;
+	padding-left: 9px;
+	display: inline-block;
+}
+
+.left-side .a-btn-group > nav{
+	font-size: 14px;
+	cursor: pointer;
+	padding: 4px;
+	padding-left: 9px;
+	border-radius: 8px;
+	color:#64748b;
+	margin-bottom: 4px;
+}
+
+.left-side .a-btn-group > nav.active{
+	background: #ffedd5;
+	color:#f97316;
+	font-weight: 700;
+}
+
+.left-side .a-btn-group > nav:hover{
+	background: #f1f5f9;
+	color:#222;
+	font-weight: 700;
+}
+
+
+
+.form-container{
+	width: 400px;
+	height: 600px;
+	margin:0 auto;
+	padding-top: 50px;
+}
+
+
+
+.form-box{
+	display: flex;
+	flex-direction: column;
+	margin-top: 14px;
+}
+
+.form-box > label{
+	color:#222;
+}
+
+.form-box > input{
+	padding: 7px 4px;
+	margin-top: 4px;
+	border-radius: 6px;
+	border: 1px solid #cdcdcd;
+	outline: none;
+}
+
+.form-box > input:focus{
+	border:1px solid var(--main-color);
+}
+
+.form-box > select{
+	padding: 7px 4px;
+	margin-top: 4px;
+	border-radius: 6px;
+}
+
+
+.form-box > button{
+	padding: 10px;
+	margin-top:40px;
+	background-color: var(--main-color);
+	color:#fff;
+	font-weight: 700;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.form-box > button:hover{
+	background: #3c81e4;
+}
+
+
+.result-txt{
+	font-size: 13px;
+	color:#fff;
+}
+
+.result-txt.not{
+	color:#e00505;
+}
+
+.result-txt.ok{
+	color:#05c61f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
